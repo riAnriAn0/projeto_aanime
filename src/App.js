@@ -1,17 +1,16 @@
-import './App.css';
 import { BrowserRouter as Router} from 'react-router-dom';
 import Index from './routes';
 import Nav from './components/Nav';
-
+import Container from './components/Container';
 
 function App() {
   return (
-    <div className="App">
         <Router >
-          <Nav />
-          <Index />
+          <Container >
+            <Nav />
+            <Index />
+          </Container>
         </Router>
-    </div>
   );
 }
 
